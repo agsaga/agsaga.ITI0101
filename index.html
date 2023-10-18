@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image:url('https://i.stack.imgur.com/kx8MT.gif'); background-repeat:repeat;
+            background-size: cover; /* Taustaks gif */
+	color: white; /*Tekst valgeks */
+        font-family: Arial; /* Teksti font */
+        text-align: justify; /* Teksti joondus */
+		}
+	button {
+            background-color: purple; /* Nupu tausta värv */
+            color: white; /* Nupu teksti värv */
+	    border-radius: 12px; /* Nupp ümaramaks */
+	    font-family: Arial; /* Nupu font  */
+        }
+    </style>
+</head>
+<body>
+    <h1>Alan Turing</h1> <!-- Nimi-->
+    <h2>inglise informaatik, matemaatik, loogik, krüptoanalüütik, filosoof ja bioloogiateoreetik. </h2> <!-- Lühikirjeldus-->
+    <p>Turing oli väga mõjukas teoreetilise informaatika valdkonna väljakujunemisel, formaliseerides muuhulgas algoritmi ja arvutatavuse mõisted Turingi masinaga, mida peetakse arvuti eelkäijaks, ning sõnastades Churchi-Turingi teesi. Teda peetakse teoreetilise informaatika ja tehisintellekti isaks.
+
+Teise maailmasõja ajal töötas Turing Bletchley Parkis Suurbritannia dešifreerimiskeskuses, täpsemalt Briti valitsuse kodeerimis- ja šifreerimiskeskuses (Government Code and Cypher School, lühendatult GC&CS), mille töö tulemusena toodeti Ultraks nimetatav luureinfokogum. Turing juhtis mõnda aega Majas 8 asunud osakonda, mis tegeles Saksa mereväeside krüptoanalüüsiga. Ta aitas Saksa šifrite dešifreerimise kiirendamiseks välja töötada mitmeid seadmeid ja tehnikaid, sh sõjaeelse Bombe-meetodi edasiarendused ja elektromehaanilise masina Enigma masinate seadete väljaarvutamiseks. Turingi kaaluka panuse tõttu kodeeritud sõnumite murdmisel õnnestus liitlasvägedel teljeriike võita mitmetes olulistes lahingutes, sh Atlandi lahingus.</p>
+ <!-- Pikem tekst-->
+  <table> <!-- Tabel-->
+	  <tr> 
+	    <th>Eluiga:</th>
+	    <td>1912-</td>
+	    <td>1954 (enesetapp kohtuotsuse hormoonravi tagajärjel)</td>
+	  </tr>
+	  <tr> 
+	    <th>Kohtusüüdistus:</th>
+	    <td>1952-</td>
+	    <td>2008 (valitsus vabandas)</td>
+	  </tr>
+    </table>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Turing_in_1935.jpg/330px-Turing_in_1935.jpg" alt="Turing reading in 1935, at his parents' home garden. That same year, he published Equivalence of left and right almost periodicity, his first paper ever.">
+    <h3>Veits depresiivne, võib vajutada nüüd nuppu lõbustamiseks</h3> <!--Kolmas pealkiri-->
+    <button onclick="loendamine()">Vajuta!</button> <!-- Loendamis nupp-->
+    <p id="l">0</p> <!--Loendis -->
+    <a href="https://en.wikipedia.org/wiki/Alan_Turing" target="_blank">Referents</a> <!-- Link wikipediasse-->
+    <p>233568</p> <!-- Matrikli-->
+    <a href=" https://taltech.ee/" target="_blank">Ülikooli link</a> <!-- Link ülikooli-->
+    <script> 
+        var l = 0; /*Loendaja nullija*/
+        function loendamine() { /*Nuppu loendamis funktsioon*/
+            l++; /*Loendamise suurenemine*/
+            document.getElementById("l").innerHTML = l; /*Loendaja info uuendamine*/
+        }
+    </script>
+</body>
+</html>
